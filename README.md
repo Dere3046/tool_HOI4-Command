@@ -62,7 +62,8 @@ python main.py
 - **Status**: Functional but basic implementation
 - **Project Language**: Chinese (UI)
 
-[ui.jpg]
+## 📸 Screenshot
+![应用截图](images/image.png)
 
 ## 🔧 How to Expand the Command Database
 
