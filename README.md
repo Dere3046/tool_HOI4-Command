@@ -1,10 +1,10 @@
+# Hearts of Iron IV Console Commands Tool
+
 <p align="center">
-  <a href="#readme">
-    <img src="https://img.shields.io/badge/Language-中文-blue?style=for-the-badge&link=README_zh.md" alt="中文版本">
+  <a href="README_zh.md">
+    <img src="https://img.shields.io/badge/中文版本-Chinese%20Version-blue?style=for-the-badge" alt="中文版本">
   </a>
 </p>
-
-# Hearts of Iron IV Console Commands Tool
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python Version">
@@ -12,6 +12,8 @@
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License">
   <img src="https://img.shields.io/badge/Status-Functional%20Beta-orange" alt="Status">
 </p>
+
+> 📖 **Available in**: [English](README.md) | [中文](README_zh.md)
 
 ## 📖 Overview
 This is a fan-made tool that helps you quickly access Hearts of Iron IV console commands through a user-friendly interface. **This is not an official Paradox Interactive product** and is not affiliated with or endorsed by Paradox Interactive.
