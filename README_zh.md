@@ -1,10 +1,10 @@
+# Hearts of Iron IV 控制台命令工具
+
 <p align="center">
-  <a href="../README.md">
-    <img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge&link=../README.md" alt="English Version">
+  <a href="README.md">
+    <img src="https://img.shields.io/badge/English%20Version-英文版本-blue?style=for-the-badge" alt="English Version">
   </a>
 </p>
-
-# Hearts of Iron IV 控制台命令工具
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue" alt="Python 版本">
@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/Status-功能测试版-orange" alt="状态">
 </p>
 
+> 📖 **可用语言**: [English](README.md) | [中文](README_zh.md)
 ## 📖 概述
 这是一个粉丝制作的工具，旨在通过用户友好的界面帮助您快速访问《钢铁雄心4》的控制台命令。**这不是官方的 Paradox Interactive 产品**，与 Paradox Interactive 无关，也未获得其认可。
 
