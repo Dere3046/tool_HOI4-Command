@@ -1,16 +1,12 @@
 {
-    "resource_management": "资源管理",
-    "country_management": "国家管理", 
-    "war_related": "战争相关",
-    "cheat_commands": "作弊指令",
-    "technology_research": "科技研究",
-    "diplomacy_politics": "外交政治",
-    "military_operations": "军事行动",
+    "useful_commands": "常用指令",
+    "country_management": "国家与外交",
+    "resource_cheats": "资源与装备",
+    "tech_and_ideas": "科技与理念",
+    "military_cheats": "军事与战争",
     "special_projects": "特殊项目",
-    "debug_tools": "调试工具",
-    "modding_tools": "模组工具",
-    "naval_operations": "海军行动",
-    "air_operations": "空军行动",
-    "espionage_operations": "间谍行动",
-    "economic_management": "经济管理"
+    "intelligence_agency": "情报机构",
+    "modding_commands": "模组开发",
+    "debug_commands": "调试指令",
+    "other_commands": "其他指令"
 }

@@ -1,0 +1,1410 @@
+{
+    "resource_management": {
+        "add_equipment": {
+            "description": "add_equipment",
+            "parameters": {
+                "equipment_type": {
+                    "type": "choice",
+                    "description": "equipment_type",
+                    "required": true,
+                    "options": ["infantry_equipment", "support_equipment", "artillery", "tanks", "convoy_1"]
+                },
+                "amount": {
+                    "type": "int",
+                    "description": "amount",
+                    "required": true,
+                    "default": "1000"
+                }
+            }
+        },
+        "ae": {
+            "description": "add_equipment (alias)",
+            "parameters": {
+                "equipment_type": {
+                    "type": "choice",
+                    "description": "equipment_type",
+                    "required": true,
+                    "options": ["infantry_equipment", "support_equipment", "artillery", "tanks", "convoy_1"]
+                },
+                "amount": {
+                    "type": "int",
+                    "description": "amount",
+                    "required": true,
+                    "default": "1000"
+                }
+            }
+        },
+        "add_latest_equipment": {
+            "description": "add_latest_equipment",
+            "parameters": {
+                "equipment_name": {
+                    "type": "string",
+                    "description": "equipment_name",
+                    "required": false,
+                    "placeholder": "equipment_name"
+                },
+                "amount": {
+                    "type": "int",
+                    "description": "amount",
+                    "required": true,
+                    "default": "1000"
+                }
+            }
+        },
+        "ale": {
+            "description": "add_latest_equipment (alias)",
+            "parameters": {
+                "equipment_name": {
+                    "type": "string",
+                    "description": "equipment_name",
+                    "required": false,
+                    "placeholder": "equipment_name"
+                },
+                "amount": {
+                    "type": "int",
+                    "description": "amount",
+                    "required": true,
+                    "default": "1000"
+                }
+            }
+        },
+        "manpower": {
+            "description": "manpower",
+            "parameters": {
+                "manpower_amount": {
+                    "type": "int",
+                    "description": "manpower_amount",
+                    "required": false,
+                    "default": "10000000"
+                }
+            }
+        },
+        "pp": {
+            "description": "pp",
+            "parameters": {
+                "political_power": {
+                    "type": "int",
+                    "description": "political_power",
+                    "required": false,
+                    "default": "1000"
+                }
+            }
+        },
+        "fuhrer_mana": {
+            "description": "pp (alias)",
+            "parameters": {
+                "political_power": {
+                    "type": "int",
+                    "description": "political_power",
+                    "required": false,
+                    "default": "1000"
+                }
+            }
+        },
+        "political_power": {
+            "description": "pp (alias)",
+            "parameters": {
+                "political_power": {
+                    "type": "int",
+                    "description": "political_power",
+                    "required": false,
+                    "default": "1000"
+                }
+            }
+        },
+        "cp": {
+            "description": "cp",
+            "parameters": {
+                "command_power": {
+                    "type": "int",
+                    "description": "command_power",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        },
+        "fuel": {
+            "description": "fuel",
+            "parameters": {
+                "fuel_amount": {
+                    "type": "int",
+                    "description": "fuel_amount",
+                    "required": false,
+                    "default": "100000"
+                }
+            }
+        },
+        "st": {
+            "description": "st",
+            "parameters": {
+                "stability": {
+                    "type": "int",
+                    "description": "stability",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        },
+        "ws": {
+            "description": "ws",
+            "parameters": {
+                "war_support": {
+                    "type": "int",
+                    "description": "war_support",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        },
+        "add_war_support": {
+            "description": "add_war_support",
+            "parameters": {
+                "war_support": {
+                    "type": "int",
+                    "description": "war_support",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        },
+        "xp": {
+            "description": "xp",
+            "parameters": {
+                "experience": {
+                    "type": "int",
+                    "description": "experience",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        },
+        "nu": {
+            "description": "nu",
+            "parameters": {
+                "naval_experience": {
+                    "type": "int",
+                    "description": "naval_experience",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        },
+        "air_xp": {
+            "description": "air_xp",
+            "parameters": {
+                "air_experience": {
+                    "type": "int",
+                    "description": "air_experience",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        }
+    },
+    "country_management": {
+        "tag": {
+            "description": "tag",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "annex": {
+            "description": "annex",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "add_core": {
+            "description": "add_core",
+            "parameters": {
+                "state_id": {
+                    "type": "int",
+                    "description": "state_id",
+                    "required": true,
+                    "placeholder": "state_id"
+                }
+            }
+        },
+        "remove_core": {
+            "description": "remove_core",
+            "parameters": {
+                "state_id": {
+                    "type": "int",
+                    "description": "state_id",
+                    "required": true,
+                    "placeholder": "state_id"
+                },
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "set_ruling_party": {
+            "description": "set_ruling_party",
+            "parameters": {
+                "party_ideology": {
+                    "type": "choice",
+                    "description": "party_ideology",
+                    "required": true,
+                    "options": ["fascism", "communism", "democratic", "neutrality"]
+                }
+            }
+        },
+        "add_party_popularity": {
+            "description": "add_party_popularity",
+            "parameters": {
+                "party_ideology": {
+                    "type": "choice",
+                    "description": "party_ideology",
+                    "required": true,
+                    "options": ["fascism", "communism", "democratic", "neutrality"]
+                },
+                "popularity_value": {
+                    "type": "int",
+                    "description": "popularity_value",
+                    "required": true,
+                    "default": "10"
+                }
+            }
+        },
+        "add_autonomy": {
+            "description": "add_autonomy",
+            "parameters": {
+                "target_country": {
+                    "type": "string",
+                    "description": "target_country",
+                    "required": true,
+                    "placeholder": "country_tag"
+                },
+                "autonomy_value": {
+                    "type": "int",
+                    "description": "autonomy_value",
+                    "required": true,
+                    "default": "-200"
+                }
+            }
+        },
+        "release": {
+            "description": "release",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        }
+    },
+    "war_related": {
+        "instantconstruction": {
+            "description": "instantconstruction",
+            "parameters": {}
+        },
+        "ic": {
+            "description": "instantconstruction (alias)",
+            "parameters": {}
+        },
+        "instanttraining": {
+            "description": "instanttraining",
+            "parameters": {}
+        },
+        "it": {
+            "description": "instanttraining (alias)",
+            "parameters": {}
+        },
+        "teleport": {
+            "description": "teleport",
+            "parameters": {}
+        },
+        "tp": {
+            "description": "teleport (alias)",
+            "parameters": {}
+        },
+        "nuke": {
+            "description": "nuke",
+            "parameters": {
+                "amount": {
+                    "type": "int",
+                    "description": "amount",
+                    "required": false,
+                    "default": "100"
+                }
+            }
+        },
+        "civilwar": {
+            "description": "civilwar",
+            "parameters": {
+                "ideology": {
+                    "type": "choice",
+                    "description": "ideology",
+                    "required": true,
+                    "options": ["fascism", "communism", "democratic", "neutrality"]
+                },
+                "target_country": {
+                    "type": "string",
+                    "description": "target_country",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "winwars": {
+            "description": "winwars",
+            "parameters": {}
+        },
+        "whitepeace": {
+            "description": "whitepeace",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "wp": {
+            "description": "whitepeace (alias)",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "deleteallunits": {
+            "description": "deleteallunits",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "delall": {
+            "description": "deleteallunits (alias)",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "deleteallunitsbut": {
+            "description": "deleteallunitsbut",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "delallbut": {
+            "description": "deleteallunitsbut (alias)",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        }
+    },
+    "diplomacy_politics": {
+        "puppet": {
+            "description": "puppet",
+            "parameters": {
+                "puppeteer": {
+                    "type": "string",
+                    "description": "puppeteer",
+                    "required": true,
+                    "placeholder": "country_tag"
+                },
+                "target_country": {
+                    "type": "string",
+                    "description": "target_country",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "add_opinion": {
+            "description": "add_opinion",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "allowdiplo": {
+            "description": "allowdiplo",
+            "parameters": {}
+        },
+        "adiplo": {
+            "description": "allowdiplo (alias)",
+            "parameters": {}
+        },
+        "nocb": {
+            "description": "allowdiplo (alias)",
+            "parameters": {}
+        },
+        "event": {
+            "description": "event",
+            "parameters": {
+                "event_id": {
+                    "type": "string",
+                    "description": "event_id",
+                    "required": true,
+                    "placeholder": "event_id"
+                },
+                "target_country": {
+                    "type": "string",
+                    "description": "target_country",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "add_legitimacy": {
+            "description": "add_legitimacy",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                },
+                "legitimacy_value": {
+                    "type": "int",
+                    "description": "legitimacy_value",
+                    "required": true,
+                    "default": "22"
+                }
+            }
+        }
+    },
+    "technology_research": {
+        "research": {
+            "description": "research",
+            "parameters": {
+                "slot_id": {
+                    "type": "string",
+                    "description": "slot_id",
+                    "required": true,
+                    "placeholder": "slot_id or 'all'"
+                }
+            }
+        },
+        "research_on_icon_click": {
+            "description": "research_on_icon_click",
+            "parameters": {}
+        },
+        "roic": {
+            "description": "research_on_icon_click (alias)",
+            "parameters": {}
+        },
+        "add_latest_tech": {
+            "description": "add_latest_tech",
+            "parameters": {}
+        },
+        "add_ideas": {
+            "description": "add_ideas",
+            "parameters": {
+                "idea_name": {
+                    "type": "string",
+                    "description": "idea_name",
+                    "required": true,
+                    "placeholder": "idea_name"
+                }
+            }
+        },
+        "remove_ideas": {
+            "description": "remove_ideas",
+            "parameters": {
+                "idea_name": {
+                    "type": "string",
+                    "description": "idea_name",
+                    "required": true,
+                    "placeholder": "idea_name"
+                }
+            }
+        },
+        "toggle_hidden_techs": {
+            "description": "toggle_hidden_techs",
+            "parameters": {}
+        },
+        "tht": {
+            "description": "toggle_hidden_techs (alias)",
+            "parameters": {}
+        }
+    },
+    "cheat_commands": {
+        "tdebug": {
+            "description": "tdebug",
+            "parameters": {}
+        },
+        "ai": {
+            "description": "ai",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "yesman": {
+            "description": "yesman",
+            "parameters": {}
+        },
+        "ai_accept": {
+            "description": "ai_accept",
+            "parameters": {}
+        },
+        "nocheat": {
+            "description": "nocheat",
+            "parameters": {}
+        },
+        "fow": {
+            "description": "fow",
+            "parameters": {
+                "province_id": {
+                    "type": "int",
+                    "description": "province_id",
+                    "required": false,
+                    "placeholder": "province_id"
+                }
+            }
+        },
+        "debug_fow": {
+            "description": "fow (alias)",
+            "parameters": {
+                "province_id": {
+                    "type": "int",
+                    "description": "province_id",
+                    "required": false,
+                    "placeholder": "province_id"
+                }
+            }
+        },
+        "debug": {
+            "description": "debug",
+            "parameters": {}
+        },
+        "observe": {
+            "description": "observe",
+            "parameters": {}
+        },
+        "spectator": {
+            "description": "observe (alias)",
+            "parameters": {}
+        },
+        "allowtraits": {
+            "description": "allowtraits",
+            "parameters": {}
+        },
+        "allowideas": {
+            "description": "allowideas",
+            "parameters": {}
+        }
+    },
+    "special_projects": {
+        "sp_instant": {
+            "description": "sp_instant",
+            "parameters": {}
+        },
+        "sp_fast": {
+            "description": "sp_fast",
+            "parameters": {}
+        },
+        "sp_breakthrough": {
+            "description": "sp_breakthrough",
+            "parameters": {
+                "amount": {
+                    "type": "int",
+                    "description": "amount",
+                    "required": true,
+                    "default": "1"
+                },
+                "specialisation": {
+                    "type": "choice",
+                    "description": "specialisation",
+                    "required": false,
+                    "options": ["specialization_land", "specialization_air", "specialization_naval", "specialization_nuclear"]
+                }
+            }
+        },
+        "sp_br": {
+            "description": "sp_breakthrough (alias)",
+            "parameters": {
+                "amount": {
+                    "type": "int",
+                    "description": "amount",
+                    "required": true,
+                    "default": "1"
+                },
+                "specialisation": {
+                    "type": "choice",
+                    "description": "specialisation",
+                    "required": false,
+                    "options": ["specialization_land", "specialization_air", "specialization_naval", "specialization_nuclear"]
+                }
+            }
+        },
+        "sp_available": {
+            "description": "sp_available",
+            "parameters": {}
+        },
+        "sp_unlock_all": {
+            "description": "sp_unlock_all",
+            "parameters": {}
+        },
+        "sp_research_all": {
+            "description": "sp_research_all",
+            "parameters": {}
+        },
+        "sp_ra": {
+            "description": "sp_research_all (alias)",
+            "parameters": {}
+        },
+        "sp_add_scientist": {
+            "description": "sp_add_scientist",
+            "parameters": {
+                "scientist_level": {
+                    "type": "int",
+                    "description": "scientist_level",
+                    "required": false,
+                    "default": "1"
+                },
+                "specialisation": {
+                    "type": "choice",
+                    "description": "specialisation",
+                    "required": false,
+                    "options": ["specialization_land", "specialization_air", "specialization_naval", "specialization_nuclear"]
+                }
+            }
+        },
+        "sp_add_mastermind": {
+            "description": "sp_add_mastermind",
+            "parameters": {}
+        },
+        "sp_set_selected_scientist_level": {
+            "description": "sp_set_selected_scientist_level",
+            "parameters": {
+                "scientist_level": {
+                    "type": "int",
+                    "description": "scientist_level",
+                    "required": true,
+                    "default": "5"
+                }
+            }
+        },
+        "sp_add_selected_scientist_trait": {
+            "description": "sp_add_selected_scientist_trait",
+            "parameters": {
+                "trait_name": {
+                    "type": "string",
+                    "description": "trait_name",
+                    "required": true,
+                    "placeholder": "trait_name"
+                }
+            }
+        }
+    },
+    "military_operations": {
+        "agency.instant": {
+            "description": "agency.instant",
+            "parameters": {}
+        },
+        "focus.autocomplete": {
+            "description": "focus.autocomplete",
+            "parameters": {}
+        },
+        "fa": {
+            "description": "focus.autocomplete (alias)",
+            "parameters": {}
+        },
+        "focus.nochecks": {
+            "description": "focus.nochecks",
+            "parameters": {}
+        },
+        "focus.ignoreprerequisites": {
+            "description": "focus.ignoreprerequisites",
+            "parameters": {}
+        },
+        "freefocuses": {
+            "description": "freefocuses",
+            "parameters": {}
+        },
+        "ff": {
+            "description": "freefocuses (alias)",
+            "parameters": {}
+        },
+        "decision.fastremove": {
+            "description": "decision.fastremove",
+            "parameters": {}
+        },
+        "decision.nochecks": {
+            "description": "decision.nochecks",
+            "parameters": {}
+        },
+        "instant_prepare": {
+            "description": "instant_prepare",
+            "parameters": {}
+        },
+        "agency.instantslotunlock": {
+            "description": "agency.instantslotunlock",
+            "parameters": {}
+        },
+        "agency.autocomplete": {
+            "description": "agency.autocomplete",
+            "parameters": {}
+        },
+        "prevent_operative_detection": {
+            "description": "prevent_operative_detection",
+            "parameters": {}
+        },
+        "force_operative_detection": {
+            "description": "force_operative_detection",
+            "parameters": {}
+        },
+        "operation.instant": {
+            "description": "operation.instant",
+            "parameters": {}
+        },
+        "agency.keepexcessoperatives": {
+            "description": "agency.keepexcessoperatives",
+            "parameters": {}
+        }
+    },
+    "debug_tools": {
+        "setowner": {
+            "description": "setowner",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "setcontroller": {
+            "description": "setcontroller",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                },
+                "province_id": {
+                    "type": "int",
+                    "description": "province_id",
+                    "required": true,
+                    "placeholder": "province_id"
+                }
+            }
+        },
+        "help": {
+            "description": "help",
+            "parameters": {
+                "command_name": {
+                    "type": "string",
+                    "description": "command_name",
+                    "required": false,
+                    "placeholder": "command_name"
+                }
+            }
+        },
+        "occupationpaint": {
+            "description": "occupationpaint",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "op": {
+            "description": "occupationpaint (alias)",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "resistance": {
+            "description": "resistance",
+            "parameters": {
+                "resistance_value": {
+                    "type": "int",
+                    "description": "resistance_value",
+                    "required": true,
+                    "default": "100"
+                }
+            }
+        },
+        "compliance": {
+            "description": "compliance",
+            "parameters": {
+                "compliance_value": {
+                    "type": "int",
+                    "description": "compliance_value",
+                    "required": true,
+                    "default": "100"
+                }
+            }
+        },
+        "add_intel": {
+            "description": "add_intel",
+            "parameters": {
+                "country_tag_1": {
+                    "type": "string",
+                    "description": "country_tag_1",
+                    "required": false,
+                    "placeholder": "country_tag"
+                },
+                "country_tag_2": {
+                    "type": "string",
+                    "description": "country_tag_2",
+                    "required": false,
+                    "placeholder": "country_tag"
+                },
+                "intel_values": {
+                    "type": "string",
+                    "description": "intel_values",
+                    "required": false,
+                    "placeholder": "civilian=90 army=80 navy=70 airforce=60"
+                }
+            }
+        },
+        "add_mines": {
+            "description": "add_mines",
+            "parameters": {}
+        },
+        "acclimization": {
+            "description": "acclimization",
+            "parameters": {
+                "climate_type": {
+                    "type": "choice",
+                    "description": "climate_type",
+                    "required": true,
+                    "options": ["cold_climate", "hot_climate"]
+                },
+                "acclimization_value": {
+                    "type": "int",
+                    "description": "acclimization_value",
+                    "required": true,
+                    "default": "75"
+                }
+            }
+        },
+        "debug_smooth": {
+            "description": "debug_smooth",
+            "parameters": {}
+        },
+        "debug_crash": {
+            "description": "debug_crash",
+            "parameters": {}
+        },
+        "crash": {
+            "description": "debug_crash (alias)",
+            "parameters": {}
+        }
+    },
+    "modding_tools": {
+        "guibounds": {
+            "description": "guibounds",
+            "parameters": {}
+        },
+        "gui": {
+            "description": "guibounds (alias)",
+            "parameters": {}
+        },
+        "set_var": {
+            "description": "set_var",
+            "parameters": {
+                "variable_name": {
+                    "type": "string",
+                    "description": "variable_name",
+                    "required": true,
+                    "placeholder": "variable_name"
+                },
+                "variable_value": {
+                    "type": "string",
+                    "description": "variable_value",
+                    "required": true,
+                    "placeholder": "variable_value"
+                }
+            }
+        },
+        "get_var": {
+            "description": "get_var",
+            "parameters": {
+                "variable_name": {
+                    "type": "string",
+                    "description": "variable_name",
+                    "required": true,
+                    "placeholder": "variable_name"
+                }
+            }
+        },
+        "list_vars": {
+            "description": "list_vars",
+            "parameters": {}
+        },
+        "set_country_flag": {
+            "description": "set_country_flag",
+            "parameters": {
+                "flag_name": {
+                    "type": "string",
+                    "description": "flag_name",
+                    "required": true,
+                    "placeholder": "flag_name"
+                }
+            }
+        },
+        "set_global_flag": {
+            "description": "set_global_flag",
+            "parameters": {
+                "flag_name": {
+                    "type": "string",
+                    "description": "flag_name",
+                    "required": true,
+                    "placeholder": "flag_name"
+                }
+            }
+        },
+        "list_flags": {
+            "description": "list_flags",
+            "parameters": {}
+        },
+        "trigger": {
+            "description": "trigger",
+            "parameters": {
+                "scripted_trigger": {
+                    "type": "string",
+                    "description": "scripted_trigger",
+                    "required": true,
+                    "placeholder": "scripted_trigger"
+                }
+            }
+        },
+        "effect": {
+            "description": "effect",
+            "parameters": {
+                "scripted_effect": {
+                    "type": "string",
+                    "description": "scripted_effect",
+                    "required": true,
+                    "placeholder": "scripted_effect"
+                }
+            }
+        },
+        "eval_effect": {
+            "description": "effect (alias)",
+            "parameters": {
+                "scripted_effect": {
+                    "type": "string",
+                    "description": "scripted_effect",
+                    "required": true,
+                    "placeholder": "scripted_effect"
+                }
+            }
+        },
+        "e": {
+            "description": "effect (alias)",
+            "parameters": {
+                "scripted_effect": {
+                    "type": "string",
+                    "description": "scripted_effect",
+                    "required": true,
+                    "placeholder": "scripted_effect"
+                }
+            }
+        },
+        "aiview": {
+            "description": "aiview",
+            "parameters": {}
+        },
+        "human_ai": {
+            "description": "human_ai",
+            "parameters": {}
+        },
+        "set_cosmetic_tag": {
+            "description": "set_cosmetic_tag",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                },
+                "cosmetic_tag": {
+                    "type": "string",
+                    "description": "cosmetic_tag",
+                    "required": true,
+                    "placeholder": "cosmetic_tag"
+                }
+            }
+        },
+        "reload": {
+            "description": "reload",
+            "parameters": {
+                "reload_type": {
+                    "type": "string",
+                    "description": "reload_type",
+                    "required": true,
+                    "placeholder": "loc/focus/filename"
+                }
+            }
+        },
+        "reloadoob": {
+            "description": "reloadoob",
+            "parameters": {
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": false,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "reloadinterface": {
+            "description": "reloadinterface",
+            "parameters": {}
+        },
+        "reloadtechnologies": {
+            "description": "reloadtechnologies",
+            "parameters": {}
+        },
+        "updateequipments": {
+            "description": "updateequipments",
+            "parameters": {}
+        },
+        "updatesubunits": {
+            "description": "updatesubunits",
+            "parameters": {}
+        },
+        "update_loc": {
+            "description": "update_loc",
+            "parameters": {
+                "localization_tag": {
+                    "type": "string",
+                    "description": "localization_tag",
+                    "required": true,
+                    "placeholder": "localization_tag"
+                }
+            }
+        },
+        "error": {
+            "description": "error",
+            "parameters": {}
+        },
+        "imgui": {
+            "description": "imgui",
+            "parameters": {}
+        },
+        "goto_province": {
+            "description": "goto_province",
+            "parameters": {
+                "province_id": {
+                    "type": "int",
+                    "description": "province_id",
+                    "required": true,
+                    "placeholder": "province_id"
+                }
+            }
+        },
+        "goto_state": {
+            "description": "goto_state",
+            "parameters": {
+                "state_id": {
+                    "type": "int",
+                    "description": "state_id",
+                    "required": true,
+                    "placeholder": "state_id"
+                }
+            }
+        },
+        "province_ids": {
+            "description": "province_ids",
+            "parameters": {}
+        },
+        "pid": {
+            "description": "province_ids (alias)",
+            "parameters": {}
+        }
+    },
+    "naval_operations": {
+        "add_mines": {
+            "description": "add_mines",
+            "parameters": {}
+        },
+        "instant_prepare": {
+            "description": "instant_prepare",
+            "parameters": {}
+        },
+        "ai_invasion": {
+            "description": "ai_invasion",
+            "parameters": {}
+        }
+    },
+    "air_operations": {
+        "aircombat": {
+            "description": "aircombat",
+            "parameters": {
+                "scenario_name": {
+                    "type": "string",
+                    "description": "scenario_name",
+                    "required": true,
+                    "placeholder": "scenario_name"
+                },
+                "result_name": {
+                    "type": "string",
+                    "description": "result_name",
+                    "required": true,
+                    "placeholder": "result_name"
+                },
+                "province_id": {
+                    "type": "int",
+                    "description": "province_id",
+                    "required": true,
+                    "placeholder": "province_id"
+                },
+                "airbase_state_1": {
+                    "type": "int",
+                    "description": "airbase_state_1",
+                    "required": true,
+                    "placeholder": "state_id"
+                },
+                "airbase_state_2": {
+                    "type": "int",
+                    "description": "airbase_state_2",
+                    "required": true,
+                    "placeholder": "state_id"
+                },
+                "equipment_type_1": {
+                    "type": "string",
+                    "description": "equipment_type_1",
+                    "required": true,
+                    "placeholder": "equipment_type"
+                },
+                "equipment_type_2": {
+                    "type": "string",
+                    "description": "equipment_type_2",
+                    "required": true,
+                    "placeholder": "equipment_type"
+                },
+                "equipment_creator_1": {
+                    "type": "string",
+                    "description": "equipment_creator_1",
+                    "required": true,
+                    "placeholder": "country_tag"
+                },
+                "equipment_creator_2": {
+                    "type": "string",
+                    "description": "equipment_creator_2",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        },
+        "airc": {
+            "description": "aircombat (alias)",
+            "parameters": {
+                "scenario_name": {
+                    "type": "string",
+                    "description": "scenario_name",
+                    "required": true,
+                    "placeholder": "scenario_name"
+                },
+                "result_name": {
+                    "type": "string",
+                    "description": "result_name",
+                    "required": true,
+                    "placeholder": "result_name"
+                },
+                "province_id": {
+                    "type": "int",
+                    "description": "province_id",
+                    "required": true,
+                    "placeholder": "province_id"
+                },
+                "airbase_state_1": {
+                    "type": "int",
+                    "description": "airbase_state_1",
+                    "required": true,
+                    "placeholder": "state_id"
+                },
+                "airbase_state_2": {
+                    "type": "int",
+                    "description": "airbase_state_2",
+                    "required": true,
+                    "placeholder": "state_id"
+                },
+                "equipment_type_1": {
+                    "type": "string",
+                    "description": "equipment_type_1",
+                    "required": true,
+                    "placeholder": "equipment_type"
+                },
+                "equipment_type_2": {
+                    "type": "string",
+                    "description": "equipment_type_2",
+                    "required": true,
+                    "placeholder": "equipment_type"
+                },
+                "equipment_creator_1": {
+                    "type": "string",
+                    "description": "equipment_creator_1",
+                    "required": true,
+                    "placeholder": "country_tag"
+                },
+                "equipment_creator_2": {
+                    "type": "string",
+                    "description": "equipment_creator_2",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        }
+    },
+    "espionage_operations": {
+        "agency.instant": {
+            "description": "agency.instant",
+            "parameters": {}
+        },
+        "agency.instantslotunlock": {
+            "description": "agency.instantslotunlock",
+            "parameters": {}
+        },
+        "agency.autocomplete": {
+            "description": "agency.autocomplete",
+            "parameters": {}
+        },
+        "prevent_operative_detection": {
+            "description": "prevent_operative_detection",
+            "parameters": {}
+        },
+        "force_operative_detection": {
+            "description": "force_operative_detection",
+            "parameters": {}
+        },
+        "operation.instant": {
+            "description": "operation.instant",
+            "parameters": {}
+        },
+        "agency.keepexcessoperatives": {
+            "description": "agency.keepexcessoperatives",
+            "parameters": {}
+        }
+    },
+    "economic_management": {
+        "addfunds": {
+            "description": "addfunds",
+            "parameters": {}
+        },
+        "addTaskCapacity": {
+            "description": "addTaskCapacity",
+            "parameters": {
+                "mio_id": {
+                    "type": "string",
+                    "description": "mio_id",
+                    "required": false,
+                    "placeholder": "mio_id"
+                },
+                "task_capacity": {
+                    "type": "int",
+                    "description": "task_capacity",
+                    "required": false,
+                    "default": "1"
+                }
+            }
+        },
+        "addSize": {
+            "description": "addSize",
+            "parameters": {
+                "mio_id": {
+                    "type": "string",
+                    "description": "mio_id",
+                    "required": false,
+                    "placeholder": "mio_id"
+                },
+                "trait_points": {
+                    "type": "int",
+                    "description": "trait_points",
+                    "required": false,
+                    "default": "1"
+                }
+            }
+        },
+        "add_cic_bank": {
+            "description": "add_cic_bank",
+            "parameters": {
+                "economic_capacity": {
+                    "type": "int",
+                    "description": "economic_capacity",
+                    "required": false,
+                    "default": "1"
+                }
+            }
+        },
+        "InternationalMarket.AddSubsidyForTags": {
+            "description": "InternationalMarket.AddSubsidyForTags",
+            "parameters": {
+                "economic_capacity": {
+                    "type": "int",
+                    "description": "economic_capacity",
+                    "required": true,
+                    "default": "5000"
+                },
+                "equipment": {
+                    "type": "string",
+                    "description": "equipment",
+                    "required": true,
+                    "placeholder": "equipment_type"
+                },
+                "country_tag": {
+                    "type": "string",
+                    "description": "country_tag",
+                    "required": true,
+                    "placeholder": "country_tag"
+                }
+            }
+        }
+    }
+}

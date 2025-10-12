@@ -1,0 +1,16 @@
+{
+    "resource_management": "资源管理",
+    "country_management": "国家管理", 
+    "war_related": "战争相关",
+    "cheat_commands": "作弊指令",
+    "technology_research": "科技研究",
+    "diplomacy_politics": "外交政治",
+    "military_operations": "军事行动",
+    "special_projects": "特殊项目",
+    "debug_tools": "调试工具",
+    "modding_tools": "模组工具",
+    "naval_operations": "海军行动",
+    "air_operations": "空军行动",
+    "espionage_operations": "间谍行动",
+    "economic_management": "经济管理"
+}
